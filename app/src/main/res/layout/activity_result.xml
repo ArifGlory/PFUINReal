@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:background="@drawable/gradient1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Perolehan Skor"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtJudul"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rela1"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtJudul"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/circle_shape"
+            android:src="@drawable/circle_shape"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="85"
+            android:id="@+id/txtSkor"
+            android:textSize="22sp"
+            android:textColor="#FFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/circle_shape"
+            android:layout_alignLeft="@+id/circle_shape"
+            android:layout_alignRight="@+id/circle_shape"
+            android:layout_alignTop="@+id/circle_shape"
+            android:layout_margin="1dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/buttonGame"
+        android:text="Home"
+        android:layout_below="@+id/rela1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnKeHome"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/buttonGame"
+        android:text="Riwayat Latihan"
+        android:layout_below="@+id/btnKeHome"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnKeHistory"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingin lihat pembahasan soalnya ?"
+        android:id="@+id/txtB"
+        android:textSize="18sp"
+        android:layout_below="@+id/btnKeHistory"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFF"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        style="@style/buttonGame"
+        android:layout_marginTop="15dp"
+        android:text="Lihat Pembahasan"
+        android:textSize="19sp"
+        android:layout_below="@+id/txtB"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_weight="0.3"
+        android:layout_marginRight="15dp"
+        android:id="@+id/btnPembahasan"/>
+
+</RelativeLayout>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="myproject.pfuinreal">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,8 +23,31 @@
         <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ListMateriUtama"
-            android:label="Materi"></activity>
+        <activity
+            android:name=".ListMateriUtama"
+            android:label="Materi" />
+        <activity
+            android:name=".MateriFisikaDasar2Activity"
+            android:label="Fisika Dasar 2" />
+        <activity android:name=".ViewMateriActivity" />
+        <activity
+            android:name=".ListMateriYoutube"
+            android:label="Video Materi" />
+        <activity
+            android:name=".ProfilActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".LatihanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ResultActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ViewPanduanPraktikum" />
+        <activity
+            android:name=".HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PembahasanActivity"></activity>
     </application>
 
 </manifest>

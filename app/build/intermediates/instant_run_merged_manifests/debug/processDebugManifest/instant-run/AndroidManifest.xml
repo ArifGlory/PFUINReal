@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myproject.pfuinreal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="myproject.pfuinreal.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="myproject.pfuinreal.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="myproject.pfuinreal.ListMateriUtama"
+            android:label="Materi" />
+        <activity
+            android:name="myproject.pfuinreal.MateriFisikaDasar2Activity"
+            android:label="Fisika Dasar 2" />
+        <activity android:name="myproject.pfuinreal.ViewMateriActivity" />
+        <activity
+            android:name="myproject.pfuinreal.ListMateriYoutube"
+            android:label="Video Materi" />
+        <activity
+            android:name="myproject.pfuinreal.ProfilActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="myproject.pfuinreal.MenuActivity" />
+        <activity
+            android:name="myproject.pfuinreal.LatihanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="myproject.pfuinreal.ResultActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="myproject.pfuinreal.ViewPanduanPraktikum" />
+        <activity
+            android:name="myproject.pfuinreal.HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="myproject.pfuinreal.PembahasanActivity" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="myproject.pfuinreal.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

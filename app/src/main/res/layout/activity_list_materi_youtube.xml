@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context="myproject.pfuinreal.ListMateriYoutube">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:id="@+id/btnGelCahaya"
+            android:text="Mengukur panjang gelombang cahaya"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:id="@+id/btnPembiasanLensa"
+            android:text="Pembiasan pada lensa"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:id="@+id/btnInduksiElektro1"
+            android:text="Induksi Elektromagnetik 1"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:id="@+id/btnInduksiElektro2"
+            android:text="Induksi Elektromagnetik 2"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:id="@+id/btnMedMagKawat"
+            android:text="Medan Magnet disekitar Kawat Lurus"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:id="@+id/btnKapasitor"
+            android:text="Kapasitor"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

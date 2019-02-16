@@ -7,7 +7,8 @@
     <color name="white_greyish">#EEEEEE</color>
     <color name="background_color">#2e7d32</color>
     <color name="button_selectorcolor">#9E9E9E</color>
-
+    <color name="startblue">#4bb6ef</color>
+    <color name="endblue">#4bb6ef</color>
     <color name="colorPrimary2">#1976d2</color>
     <color name="colorDark2">#004ba0</color>
     <color name="colorlight2">#63a4ff</color>

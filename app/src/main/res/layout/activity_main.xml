@@ -1,34 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fitsSystemWindows="true"
-    android:background="@drawable/gradient1">
-
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
     tools:context="myproject.pfuinreal.MainActivity">
 
+    <ImageView
+        android:src="@drawable/logo_uin"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/imgIcon"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_horizontal" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/imgIcon"
         android:padding="15dp">
 
-        <ImageView
-            android:src="@drawable/logo_uin"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:id="@+id/imgIcon"
-            android:layout_marginBottom="4dp"
-            android:layout_gravity="center_horizontal" />
+
+
 
 
         <EditText
@@ -36,7 +33,7 @@
             android:singleLine="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:background="@android:color/transparent"
             android:drawableLeft="@drawable/plate2"
             android:drawablePadding="8dp"
@@ -84,7 +81,7 @@
             android:id="@+id/loginBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/loginbutton_selector"
             android:padding="3dp"
             android:text="Login"
@@ -92,7 +89,53 @@
             android:textSize="17sp"
             android:textStyle="bold" />
 
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="PANDUAN PRAKTIKUM"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="PENDIDIKAN FISIKA"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="UIN RADEN INTAN LAMPUNG"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/txtJudul2"/>
+
+    </LinearLayout>
+
+
+
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="30dp"
@@ -101,4 +144,4 @@
         android:layout_marginBottom="20dp"
         android:visibility="gone" />
 </RelativeLayout>
-    </ScrollView>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:padding="15dp">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/buttonGame"
+        android:id="@+id/btnMateri"
+        android:text="Materi"
+        android:textSize="20sp"
+        android:layout_marginTop="82dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/buttonGame"
+        android:id="@+id/btnLatihan"
+        android:text="Latihan"
+        android:textSize="20sp"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/buttonGame"
+        android:id="@+id/btnVideo"
+        android:text="Video Materi"
+        android:textSize="20sp"
+        android:layout_marginTop="22dp" />
+
+</LinearLayout>

@@ -7,21 +7,33 @@
     android:background="@drawable/gradient1"
     tools:context="myproject.pfuinreal.HomeActivity">
 
-
     <ImageView
         android:src="@drawable/logo_uin"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:id="@+id/imgIcon"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="4dp"
         android:layout_gravity="center_horizontal" />
-
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:layout_below="@+id/imgIcon"
+        android:id="@+id/line1"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:id="@+id/line2"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
@@ -52,7 +64,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:gravity="center"
-                    android:text="Materi"
+                    android:text="Panduan Praktikum"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_dark"
                     android:textSize="15sp"
@@ -81,41 +93,14 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:gravity="center"
-                    android:text="Latihan"
+                    android:text="Materi dan Latihan"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_dark"
                     android:textSize="15sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="0.3">
 
-                <ImageButton
-                    android:id="@+id/ibVideo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="0dp"
-                    android:background="#00000000"
-                    android:src="@drawable/video"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:text="Video"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/background_dark"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
 
         </LinearLayout>
 
@@ -123,7 +108,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="40dp">
+
+
+
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -132,13 +121,13 @@
                 android:layout_weight="0.3">
 
                 <ImageButton
-                    android:id="@+id/ibPetunjuk"
+                    android:id="@+id/ibPembuat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginBottom="0dp"
                     android:background="#00000000"
-                    android:src="@drawable/idea"
+                    android:src="@drawable/info2"
                     android:textAlignment="center" />
 
                 <TextView
@@ -147,36 +136,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:gravity="center"
-                    android:text="Petunjuk"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/background_dark"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="0.3">
-
-                <ImageButton
-                    android:id="@+id/ibSiakad"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="0dp"
-                    android:background="#00000000"
-                    android:src="@drawable/website"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:gravity="center"
-                    android:text="Siakad"
+                    android:text="About Apps"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_dark"
                     android:textSize="15sp"
@@ -186,5 +146,47 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="PANDUAN PRAKTIKUM"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="PENDIDIKAN FISIKA"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="UIN RADEN INTAN LAMPUNG"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/txtJudul2"/>
+
+    </LinearLayout>
+
 
 </RelativeLayout>

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,6 +23,16 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/btnFisikaDasar1"
+            style="@style/buttonGame"
+            android:text="FISIKA DASAR 1"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFisikaDasar2"
             style="@style/buttonGame"
             android:text="FISIKA DASAR 2"
             android:textSize="20sp"
@@ -25,13 +41,57 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/btnElektronikaDasar1"
             style="@style/buttonGame"
-            android:text="PRAKTIKUM FISIKA 1"
+            android:text="ELEKTRONIKA DASAR 1"
             android:textSize="20sp"
             android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:text="MEKANIKA"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:text="ELEKTRONIKA DASAR 2"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:text="ALAT UKUR"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:text="LISTRIK MAGNET"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/buttonGame"
+            android:text="OPTIK"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+
 
     </LinearLayout>
 
 
 
 </RelativeLayout>
+</ScrollView>
